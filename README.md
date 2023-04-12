@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# CPU Load Monitor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+A CPU usage monitoring app built in TypeScript, React, Node.js and Express . 
+The application implements a local server with a single GET endpoint where consumers can fetch data about CPU usage for each core of the system it is hosted using the OS library and store it in a Data Base.
 
-In the project directory, you can run:
+This data is consumed by a UI based on time period provided by the user for displaying the usage in line chart for each core and the latest usage for each core as a percentage.
 
-### `npm start`
+## TL;DR
+The solution has been tested with `node.js v16.x` and `npm 7.10.0`, install dependencies with `npm`, then run `npm run build` and npm start to open a browser window pointing to [http://localhost:3000](http://localhost:3000). *Happy monitoring!*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Setting up your environment
+The minimum requirements for running this project are `node.js v16.x` and `npm 7.10.0`, or later versions.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This project leverages [Create React App](https://github.com/facebook/create-react-app) (CRA) and other custom scripts for spawning dev environments, running builds and handling code optimisations. All interaction with CRA has been abstracted in custom scripts for your convenience.
 
-### `npm test`
+Install the MongoDB using this [https://www.mongodb.com/docs/manual/installation/](https://www.mongodb.com/docs/manual/installation/).
+Then Start the MongoDB and check if you are able to connect on localhost:27017.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installing dependencies 
+As a first step prior to spawn either a development environment or a production build, please run `npm install` in the project root folder to pull all the required vendor dependencies.
 
-### `npm run build`
+## Building the CPU Monitoring App
+Once all the project dependencies have been successfully installed (see _Installing dependencies_ above) you can build and consume the project simply by running
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Step 1: `npm run build`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Step 2: `npm start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can then check the application by pointing your browser to [http://localhost:3000](http://localhost:3000).
+Backend server running on port 8080  [http://localhost:8080](http://localhost:8080).
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+##Below is the Screenshot of the application
+![Cpu Usage Monitoring App](images/img.png)
