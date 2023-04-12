@@ -31,4 +31,4 @@ You can then check the application by pointing your browser to [http://localhost
 Backend server running on port 8080  [http://localhost:8080](http://localhost:8080).
 
 ##Below is the Screenshot of the application
-![Cpu Usage Monitoring App](images/img.png)
+![example](https://user-images.githubusercontent.com/39994414/231419713-3e8a2985-b262-4f9a-8606-e1d0142fdf72.PNG)
